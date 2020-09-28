@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Header - CAP</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .header {
+      width: 100%;
+      height: 15%;
+      /*
+			background: yellow;
+			*/
+    }
+
+    .nav {
+      width: 15%;
+      height: 70%;
+      float: left;
+      /*
+			background: orange;
+			*/
+    }
+
+    .section {
+      width: 70%;
+      height: 70%;
+      float: left;
+      /*
+			background: olivedrab;
+			*/
+    }
+
+    .aside {
+      width: 15%;
+      height: 70%;
+      float: left;
+      /*
+			background: orange;
+			*/
+    }
+
+    .footer {
+      width: 100%;
+      height: 15%;
+      clear: both;
+      /*
+			background: plum;
+			*/
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 align="center">경보 헤더(alert header)
+  </header>
+  <nav class="nav"></nav>
+  <section class="section">
+    <form name="header">
+      <label class="field_label" for="text-identifier">식별자(identifier):</label>
+      <input type="text" name="text-identifier" id="text-identifier" value="" placeholder="KSTO1055887203">
+      <br>
+      <label class="field_label" for="email-sender">송신자(sender):</label>
+      <input type="email" name="email-sender" id="email-sender" value="" placeholder="KSTO@NWS.NOAA.GOV">
+      <br>
+      <label class="field_label" for="datetime-local-sent">송신시간(sent):</label>
+      <input type="datetime-local" name="datetime-local-sent" id="datetime-local-sent" value="2020-09-27T15:15"
+        placeholder=""> <br>
+
+      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <legend>경보 업무</legend>
+
+        <label for="select-status" class="ui-hidden-accessible">문서용도(Status)</label>
+        <select name="select-status" id="select-status" data-mini="true" data-inline="true">
+          <option value="Actual">실제 상황</option>
+          <option value="Exercise">훈련 상황</option>
+          <option value="Test">시스템 시험</option>
+          <option value="Draft">경보 서식</option>
+        </select>
+        <br>
+        <label for="select-msgType" class="ui-hidden-accessible">문서관리(msgType)</label>
+        <select name="select-msgType" id="select-msgType" data-mini="true" data-inline="true">
+          <option value="Alert">신규 경보</option>
+          <option value="Update">경보 메시지 갱신</option>
+          <option value="Cancel">경보 메시지 취소</option>
+        </select>
+        <br>
+        <label class="field_label" for="text-references">참조(references):</label>
+        <input type="text" name="text-references" id="text-references" value=""
+          placeholder="trinet@caltech.edu,TRI13970876 .1,2003-06-11T20:30:00-07:00">
+        <br>
+        <label class="field_label" for="textarea-note">노트(note):</label>
+        <textarea name="textarea-note" id="textarea-note" data-mini="true" placeholder=""></textarea>
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <legend>수신 제한</legend>
+
+        <label for="select-scope" class="ui-hidden-accessible">수신대상(Scope)</label>
+        <select name="select-scope" id="select-scope" data-mini="true" data-inline="true">
+          <option value="Public">일반인</option>
+          <option value="Restricted">제한된 범위</option>
+          <option value="Private">특정 주소</option>
+        </select>
+        <br>
+        <label class="field_label" for="text-restriction">특수수신자(restriction):</label>
+        <input type="text" name="text-restriction" id="text-restriction" value="" placeholder="">
+        <br>
+        <label class="field_label" for="text-address">주소(address):</label>
+        <input type="text" name="text-address" id="text-address" value="" placeholder="">
+      </fieldset>
+
+      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+        <legend>기타</legend>
+
+        <label class="field_label" for="text-source">근거(source):</label>
+        <input type="text" name="text-source" id="text-source" value="" placeholder="">
+        <br>
+        <label class="field_label" for="text-code">처리코드(code):</label>
+        <input type="text" name="text-code" id="text-code" value="" placeholder="">
+        <br>
+        <label class="field_label" for="text-incidents">사건이름(incidents):</label>
+        <input type="text" name="text-incidents" id="text-incidents" value="" placeholder="">
+      </fieldset>
+    </form>
+  </section>
+  <aside class="aside"></aside>
+  <footer class="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>area - CAP</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		.header {
+			width: 100%;
+			height: 15%;
+			/*
+			background: yellow;
+			*/
+		}
+
+		.nav {
+			width: 15%;
+			height: 70%;
+			float: left;
+			/*
+			background: orange;
+			*/
+		}
+
+		.section {
+			width: 70%;
+			height: 70%;
+			float: left;
+			/*
+			background: olivedrab;
+			*/
+		}
+
+		.aside {
+			width: 15%;
+			height: 70%;
+			float: left;
+			/*
+			background: orange;
+			*/
+		}
+
+		.footer {
+			width: 100%;
+			height: 15%;
+			clear: both;
+			/*
+			background: plum;
+			*/
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<h1 align="center">경보 지역(alert area)
+	</header>
+	<nav class="nav"></nav>
+	<section class="section">
+		<form name="area">
+			<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+				<legend>지역</legend>
+				<label class="field_label" for="textarea-areaDesc">지역명(areaDesc):</label>
+				<textarea name="textarea-areaDesc" id="textarea-areaDesc" data-mini="true"
+					placeholder="EXTREME NORTH CENTRAL TUOLU MNE COUNTY IN CALIFORNIA, EXTREME NOR THEASTERN 915 CALAVERAS COUNTY IN CALI FORNIA, SOUTHWESTERN ALPINE COUNTY IN CALIFORNIA"></textarea>
+				<br>
+				<label class="field_label" for="text-polygon">다각형(polygon):</label>
+				<input type="text" name="text-polygon" id="text-polygon" value=""
+					placeholder="38.47,-120.14 38.34,-119.95 38.52,-119.74 38.62,-119.89 38.47,-120.14">
+				<br>
+				<label class="field_label" for="text-circle">원(eventCode):</label>
+				<input type="text" name="text-circle" id="text-circle" value="" placeholder="중심, 반지름">
+				<br>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<legend>지역코드(geocode)</legend>
+
+					<label class="field_label" for="text-geocodeValueName">데이터이름(valueName):</label>
+					<input type="text" name="text-geocodeValueName" id="text-geocodeValueName" value="" placeholder="SAME">
+					<br>
+					<label class="field_label" for="text-geocodeValue">데이터값(value):</label>
+					<input type="text" name="text-geocodeValue" id="text-geocodeValue" value="" placeholder="006003">
+				</fieldset>
+			</fieldset>
+
+			<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+				<legend>고도</legend>
+
+				<label class="field_label" for="text-altitude">고도(altitude):</label>
+				<input type="text" name="text-altitude" id="text-altitude" value="" placeholder="">
+				<br>
+				<label class="field_label" for="text-ceiling">최고고도(ceiling):</label>
+				<input type="text" name="text-ceiling" id="text-ceiling" value="" placeholder="">
+			</fieldset>
+		</form>
+	</section>
+	<aside class="aside"></aside>
+	<footer class="footer"></footer>
+</body>
+
+</html>

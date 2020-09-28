@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>resource - CAP</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		.header {
+			width: 100%;
+			height: 15%;
+			/*
+			background: yellow;
+			*/
+		}
+
+		.nav {
+			width: 15%;
+			height: 70%;
+			float: left;
+			/*
+			background: orange;
+			*/
+		}
+
+		.section {
+			width: 70%;
+			height: 70%;
+			float: left;
+			/*
+			background: olivedrab;
+			*/
+		}
+
+		.aside {
+			width: 15%;
+			height: 70%;
+			float: left;
+			/*
+			background: orange;
+			*/
+		}
+
+		.footer {
+			width: 100%;
+			height: 15%;
+			clear: both;
+			/*
+			background: plum;
+			*/
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<h1 align="center">경보 미디어(alert resource)
+	</header>
+	<nav class="nav"></nav>
+	<section class="section">
+		<form name="area">
+			<label class="field_label" for="text-resouceDesc">자료형태(resouceDesc):</label>
+			<input type="text" name="text-resouceDesc" id="text-resouceDesc" value="" placeholder="Image file (GIF)">
+			<br>
+			<label class="field_label" for="text-mimeType">형식(mimeType):</label>
+			<input type="text" name="text-mimeType" id="text-mimeType" value="" placeholder="image/gif">
+			<br>
+			<label class="field_label" for="text-size">크기(size):</label>
+			<input type="text" name="text-size" id="text-size" value="" placeholder="">
+			<br>
+			<label class="field_label" for="url-uri">링크(uri):</label>
+			<input type="url" name="url-uri" id="url-uri" value=""
+				placeholder="http://www.dhs.gov/dhspublic/getAdvisoryImag e">
+			<br>
+			<label class="field_label" for="text-derefUri">파일(derefUri):</label>
+			<input type="text" name="text-derefUri" id="text-derefUri" value="" placeholder="">
+			<br>
+			<label class="field_label" for="text-digest">디지털서명(digest):</label>
+			<input type="text" name="text-digest" id="text-digest" value="" placeholder="">
+		</form>
+	</section>
+	<aside class="aside"></aside>
+	<footer class="footer"></footer>
+</body>
+
+</html>
