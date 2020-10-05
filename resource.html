@@ -4,89 +4,65 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Resource - CAP</title>
-	<style>
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-			height: 100%;
-		}
 
-		.header {
-			width: 100%;
-			height: 15%;
-			/*
-			background: yellow;
-			*/
-		}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
 
-		.nav {
-			width: 15%;
-			height: 70%;
-			float: left;
-			/*
-			background: orange;
-			*/
-		}
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
 
-		.section {
-			width: 70%;
-			height: 70%;
-			float: left;
-			/*
-			background: olivedrab;
-			*/
-		}
-
-		.aside {
-			width: 15%;
-			height: 70%;
-			float: left;
-			/*
-			background: orange;
-			*/
-		}
-
-		.footer {
-			width: 100%;
-			height: 15%;
-			clear: both;
-			/*
-			background: plum;
-			*/
-		}
-	</style>
+	<link href="./css/main.css" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
-	<header class="header">
-		<h1 align="center">경보 미디어(alert resource)
-	</header>
-	<nav class="nav"></nav>
-	<section class="section">
-		<form name="area">
-			<label class="field_label" for="text-resouceDesc">자료형태(resouceDesc):</label>
-			<input type="text" name="text-resouceDesc" id="text-resouceDesc" value="" placeholder="Image file (GIF)">
-			<br>
-			<label class="field_label" for="text-mimeType">형식(mimeType):</label>
-			<input type="text" name="text-mimeType" id="text-mimeType" value="" placeholder="image/gif">
-			<br>
-			<label class="field_label" for="text-size">크기(size):</label>
-			<input type="text" name="text-size" id="text-size" value="" placeholder="">
-			<br>
-			<label class="field_label" for="url-uri">링크(uri):</label>
-			<input type="url" name="url-uri" id="url-uri" value=""
-				placeholder="http://www.dhs.gov/dhspublic/getAdvisoryImag e">
-			<br>
-			<label class="field_label" for="text-derefUri">파일(derefUri):</label>
-			<input type="text" name="text-derefUri" id="text-derefUri" value="" placeholder="">
-			<br>
-			<label class="field_label" for="text-digest">디지털서명(digest):</label>
-			<input type="text" name="text-digest" id="text-digest" value="" placeholder="">
+<body class="bg-light">
+	<div class="container">
+		<div class="py-5 text-center">
+			<img class="d-block mx-auto mb-4" src="./img/CAP.png" alt="" height="72" />
+			<h2>CAP Creator</h2>
+			<p class="lead">[Step 4] Resource</p>
+		</div>
+		<form name="area" class="a">
+			<div class="row">
+				<div class="form-group col-md-4">
+					<label class="field_label" for="text-resouceDesc">자료형태(resouceDesc)</label>
+					<input type="text" name="text-resouceDesc" id="text-resouceDesc" class="form-control" value=""
+						placeholder="Image file (GIF)" />
+				</div>
+				<div class="form-group col-md-4">
+					<label class="field_label" for="text-mimeType">형식(mimeType)</label>
+					<input type="text" name="text-mimeType" id="text-mimeType" class="form-control" value=""
+						placeholder="image/gif" />
+				</div>
+				<div class="form-group col-md-4">
+					<label class="field_label" for="text-size">크기(size)</label>
+					<input type="text" name="text-size" id="text-size" class="form-control" value="" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="field_label" for="url-uri">링크(uri)</label>
+				<input type="url" name="url-uri" id="url-uri" class="form-control" value=""
+					placeholder="http://www.dhs.gov/dhspublic/getAdvisoryImage" />
+			</div>
+			<div class="form-group">
+				<label class="field_label" for="text-derefUri">파일(derefUri)</label>
+				<input type="text" name="text-derefUri" id="text-derefUri" class="form-control" value="" placeholder="" />
+			</div>
+			<div class="form-group">
+				<label class="field_label" for="text-digest">디지털서명(digest)</label>
+				<input type="text" name="text-digest" id="text-digest" class="form-control" value="" placeholder="" />
+			</div>
 		</form>
-	</section>
-	<aside class="aside"></aside>
-	<footer class="footer"></footer>
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">COPYRIGHT © 2020 MINCHAN ALL RIGHTS RESERVED.</p>
+		</footer>
+	</div>
 </body>
 
 </html>
